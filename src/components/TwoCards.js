@@ -6,6 +6,7 @@ import {
   Button,
   Tooltip,
   ChoiceList,
+  Heading,
 } from "@shopify/polaris";
 import "./styles.css";
 import SelectBox1 from "./SelectBox1";
@@ -46,8 +47,30 @@ const TwoCards = () => {
           <Card>
             <div className="right-card2">
               <img src={pic1} className="img" />
+              <BillingFrequency />
+              <br />
+              <TextField
+                label="Discount Code"
+                connectedRight={<Button>Apply</Button>}
+              />
+              <br />
+              <div>
+                <p>Subtotal: $2388.00</p>
+                <p>Taxes:</p>
+                <p>PST: $238.20</p>
+                <p>GST: $119.40</p>
+              </div>
+              <br />
+              <div>
+                <Heading>Total:</Heading>
+                <p>$2745.60</p>
+                <p>
+                  Your subscription will automatically renew on: 27th December
+                  2019
+                </p>
+                <br />
+              </div>
             </div>
-            <BillingFrequency />
           </Card>
         </Layout.Section>
       </Layout>

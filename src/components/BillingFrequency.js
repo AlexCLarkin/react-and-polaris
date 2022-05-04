@@ -8,11 +8,14 @@ export default function SingleChoiceListExample() {
 
   return (
     <ChoiceList
-      title="Company name"
       choices={[
-        { label: "Hidden", value: "hidden" },
-        { label: "Optional", value: "optional" },
-        { label: "Required", value: "required" },
+        { label: "Billed Monthly: $329.00/month", value: "Billed Monthly" },
+        { label: "Billed Quarterly: $269.00/month", value: "Billed Quarterly" },
+        {
+          label: "Billed Semi-Annually: $239.00/month",
+          value: "Billed Semi-Annually",
+        },
+        { label: "Billed Annually: $199.00/month", value: "Billed Annually" },
       ]}
       selected={selected}
       onChange={handleChange}
